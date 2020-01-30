@@ -19,8 +19,6 @@ const taskSchema = new mongoose.Schema({
 });
 
 taskSchema.pre('save', function (next) {
-    console.log('--> Middleware from update task');
-
     next();
 });
 
